@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="still.css">
+    <title>Mutluluk Anınıza Eşlik Edecek Şarkılar&#128512;</title>
+
+    <style>
+        a:link {
+            color: #1565C0;
+        }
+
+        a:visited {
+            color: #D32F2F;
+        }
+    </style>
+</head>
+
+<body class="mutlu-body">
+
+    <header class="index-header">
+        <nav class="index-nav">
+            <ul class="index-menu ortak-nav">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="mutlu.html">Mutlu</a></li>
+                <li><a href="uzgun.html">Üzgün</a></li>
+                <li><a href="asik.html">Aşık</a></li>
+                <li><a href="enerjik.html">Enerjik</a></li>
+                <li><a href="eskiler.html">Eskiler</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <h1 class="mutlu-title">
+        <ins>Mutluluk Anınıza Eşlik Edecek Şarkılar</ins>&#127925;
+    </h1>
+
+    <p style="text-align:center;">
+        Keyfinizi artıracak, içinizi kıpır kıpır yapacak mutlu şarkılar &#127774;
+    </p>
+
+    <hr>
+
+    <img src="resimler/mutlu.jpg" alt="Mutlu Logo" width="350" height="250">
+
+    <hr>
+
+    <header class="mutlu-header">
+        <nav class="mutlu-nav">
+            <ul class="index-menu ortak-nav">
+                <li>&#127774;<a href="https://www.youtube.com/watch?v=5nZG45hM1Hc" target="_blank">Mabel Matiz - A Canım</a></li>
+                <li>&#127774;<a href="https://www.youtube.com/watch?v=Nb4G-O1LHhc" target="_blank">Mustafa Sandal - İsyankar</a></li>
+                <li>&#127774;<a href="https://www.youtube.com/watch?v=2NSOvjbCbDk" target="_blank">Sıla - Kafa</a></li>
+                <li>&#127774;<a href="https://www.youtube.com/watch?v=NAHRpEqgcL4" target="_blank">Tarkan - Kuzu Kuzu</a></li>
+                <li>&#127774;<a href="https://www.youtube.com/watch?v=XuALZTRkvW4" target="_blank">Gökhan Türkmen - Taş</a></li>
+                <li>&#127774;<a href="https://www.youtube.com/watch?v=sprukwRl9ZQ" target="_blank">Hande Yener - Naber?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <h3>Seni Mutlu Eden Bir Şarkı Paylaş</h3>
+
+    <p id="mutlu-output"></p>
+
+    <label>Şarkı Adı:</label><br>
+    <input id="mutlu-song"><br><br>
+
+    <label>Sanatçı:</label><br>
+    <input id="mutlu-artist"><br><br>
+
+    <button onclick="mutluSarkiEkle()">Ekle</button>
+
+    <hr>
+
+    <p>
+        <a href="index.html">Ana Sayfaya Dön&#127968;</a>
+    </p>
+
+    <footer class="mutlu-footer">
+        Her duyguya bir şarkı - Tüm hakları saklıdır
+    </footer>
+
+    <script>
+
+        function mutluSarkiEkle() {
+            let sarki = document.getElementById("mutlu-song").value;
+            let sanatci = document.getElementById("mutlu-artist").value;
+
+            document.getElementById("mutlu-output").innerHTML =
+                "Paylaşılan mutlu şarkı: " + sarki + " - " + sanatci;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="still.css">
+
+    <title>Enerjinize Enerji Katan Şarkılar&#127775;</title>
+
+    <style>
+        a:link {
+            color: #008000;
+        }
+
+        a:visited {
+            color: #6D4C41;
+        }
+    </style>
+</head>
+
+<body class="energy-body">
+
+    <header class="index-header">
+        <nav class="index-nav">
+            <ul class="index-menu ortak-nav">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="mutlu.html">Mutlu</a></li>
+                <li><a href="uzgun.html">Üzgün</a></li>
+                <li><a href="asik.html">Aşık</a></li>
+                <li><a href="enerjik.html">Enerjik</a></li>
+                <li><a href="eskiler.html">Eskiler</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <h1 class="energy-title">
+        <ins>Enerjinize Enerji Katan Şarkılar</ins>&#127775;
+    </h1>
+
+    <p style="text-align:center;">
+        Hareketlenmek, motive olmak ve mod yükseltmek için seçilmiş enerjik şarkılar 🎶
+    </p>
+
+    <hr>
+
+    <img src="resimler/enerjik.jpg" alt="Enerjik Logo" width="350px" height="250px">
+
+    <br>
+    <hr>
+
+    <header class="energy-header">
+        <nav class="energy-nav">
+            <ul class="energy-list">
+                <li>&#127775;<a href="https://www.youtube.com/watch?v=QNoC_mVojhc" target="_blank">Tarkan - Öp</a></li>
+                <li>&#127775;<a href="https://www.youtube.com/watch?v=g_blQfiUSuo" target="_blank">Atiye - Salla</a></li>
+                <li>&#127775;<a href="https://www.youtube.com/watch?v=hXJGmGZMV84" target="_blank">Gülşen - Bangır Bangır</a></li>
+                <li>&#127775;<a href="https://www.youtube.com/watch?v=6zzHRUqB5O4" target="_blank">Edis - Dudak</a></li>
+                <li>&#127775;<a href="https://www.youtube.com/watch?v=i1cl71a7uSA" target="_blank">Hande Yener - Mor</a></li>
+                <li>&#127775;<a href="https://www.youtube.com/watch?v=7I1D8X6ckFM" target="_blank">Serdar Ortaç - Dansöz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <h3>Enerjini Yükselten Şarkıyı Paylaş</h3>
+
+    <p id="energy-output"></p>
+
+    <label>Şarkı Adı:</label><br>
+    <input id="energy-song"><br><br>
+
+    <label>Sanatçı:</label><br>
+    <input id="energy-artist"><br><br>
+
+    <button onclick="enerjikSarkiEkle()">Ekle</button>
+
+    <hr>
+
+    <p>
+        <a href="index.html">Ana Sayfaya Dön&#127968;</a>
+    </p>
+
+    <footer class="energy-footer">
+        Her duyguya bir şarkı - Tüm hakları saklıdır
+    </footer>
+
+    <script>
+        function enerjikSarkiEkle() {
+            let sarki = document.getElementById("energy-song").value;
+            let sanatci = document.getElementById("energy-artist").value;
+
+            document.getElementById("energy-output").innerHTML =
+                "Paylaşılan enerjik şarkı: " + sarki + " - " + sanatci;
+        }
+    </script>
+
+</body>
+
+</html>
